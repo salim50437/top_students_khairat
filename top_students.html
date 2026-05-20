@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الطلبة الأوائل للفصل الدراسي الثاني بمدرسة الخيرات للتعليم الأساسي 5-8 للعام الدراسي 2025 - 2026 -الدور الأول - الفصل الدراسي الثاني</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #14532d;
+      --primary-2: #166534;
+      --gold: #d9a441;
+      --gold-2: #f4d58d;
+      --ink: #17211b;
+      --muted: #667085;
+      --danger: #b42318;
+      --success: #027a48;
+      --card: rgba(255, 255, 255, 0.92);
+      --shadow: 0 24px 70px rgba(20, 83, 45, 0.16);
+      --radius: 28px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Cairo", "Tajawal", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 18%, rgba(217, 164, 65, 0.22), transparent 28%),
+        radial-gradient(circle at 88% 12%, rgba(20, 83, 45, 0.18), transparent 30%),
+        linear-gradient(135deg, #fffaf0 0%, #f5efe0 44%, #edf7ef 100%);
+      overflow-x: hidden;
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      z-index: -1;
+      border-radius: 999px;
+      filter: blur(2px);
+      opacity: 0.55;
+    }
+
+    body::before {
+      width: 340px;
+      height: 340px;
+      right: -130px;
+      top: 160px;
+      background: linear-gradient(145deg, rgba(20, 83, 45, 0.22), rgba(217, 164, 65, 0.10));
+    }
+
+    body::after {
+      width: 280px;
+      height: 280px;
+      left: -120px;
+      bottom: 130px;
+      background: linear-gradient(145deg, rgba(217, 164, 65, 0.24), rgba(20, 83, 45, 0.10));
+    }
+
+    .page {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 22px;
+    }
+
+    .hero {
+      position: relative;
+      border-radius: 34px;
+      padding: 34px;
+      color: #fff;
+      overflow: hidden;
+      background:
+        linear-gradient(135deg, rgba(20, 83, 45, 0.96), rgba(22, 101, 52, 0.92)),
+        url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23f4d58d' stroke-opacity='.24' stroke-width='1.4'%3E%3Cpath d='M60 8l12 24 26 4-19 18 5 26-24-13-24 13 5-26-19-18 26-4z'/%3E%3Ccircle cx='60' cy='60' r='42'/%3E%3C/g%3E%3C/svg%3E");
+      box-shadow: var(--shadow);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 8px 16px;
+      border: 1px solid rgba(244, 213, 141, 0.55);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.10);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--gold-2);
+    }
+
+    .badge span {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 0 6px rgba(217, 164, 65, 0.16);
+    }
+
+    h1 {
+      max-width: 980px;
+      margin: 18px 0 12px;
+      font-size: clamp(27px, 4.6vw, 50px);
+      line-height: 1.42;
+      font-weight: 900;
+      letter-spacing: -1px;
+    }
+
+    .hero p {
+      max-width: 880px;
+      margin: 0;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: clamp(15px, 2vw, 18px);
+      line-height: 2;
+      font-weight: 500;
+    }
+
+    .tabs {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin: 24px 0 18px;
+    }
+
+    .tab-btn {
+      border: 0;
+      cursor: pointer;
+      padding: 18px 20px;
+      border-radius: 22px;
+      font-family: inherit;
+      font-size: 17px;
+      font-weight: 900;
+      color: var(--primary);
+      background: rgba(255, 255, 255, 0.78);
+      box-shadow: 0 14px 34px rgba(20, 83, 45, 0.10);
+      transition: transform .2s ease, background .2s ease, color .2s ease;
+    }
+
+    .tab-btn:hover { transform: translateY(-2px); }
+    .tab-btn.active { color: #fff; background: linear-gradient(135deg, var(--primary), var(--primary-2)); }
+
+    .panels-shell { display: grid; min-height: 650px; }
+    .panel { display: none; }
+    .panel.active { display: block; animation: fadeUp .35s ease both; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card {
+      min-height: 650px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid rgba(20, 83, 45, 0.12);
+      border-radius: var(--radius);
+      background: var(--card);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+      overflow: hidden;
+    }
+
+    .card-header {
+      padding: 22px 24px;
+      border-bottom: 1px solid rgba(20, 83, 45, 0.10);
+      background: linear-gradient(135deg, rgba(255,255,255,.76), rgba(244,213,141,.22));
+    }
+
+    .card-header h2 { margin: 0; color: var(--primary); font-size: 24px; font-weight: 900; }
+    .card-header p { margin: 7px 0 0; color: var(--muted); line-height: 1.8; font-size: 14px; }
+
+    .card-body { flex: 1; padding: 24px; display: flex; flex-direction: column; }
+
+    .admin-grid {
+      display: grid;
+      grid-template-columns: minmax(300px, .82fr) 1.18fr;
+      gap: 18px;
+      align-items: stretch;
+      flex: 1;
+    }
+
+    .login-box,
+    .upload-box,
+    .report-box,
+    .data-management-box {
+      border-radius: 24px;
+      border: 1px solid rgba(20, 83, 45, 0.10);
+      background: rgba(255, 255, 255, 0.72);
+      padding: 20px;
+      box-shadow: 0 14px 34px rgba(20, 83, 45, 0.08);
+    }
+
+    .login-box h3,
+    .upload-box h3,
+    .report-box h3,
+    .data-management-box h3 {
+      margin: 0 0 12px;
+      color: var(--primary);
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+    .login-box p,
+    .upload-box p,
+    .report-box p,
+    .data-management-box p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.8;
+      font-weight: 600;
+    }
+
+    label { color: var(--primary); font-size: 15px; font-weight: 900; }
+    .field-stack { display: grid; gap: 10px; margin-bottom: 14px; }
+    .input-row { display: flex; gap: 12px; }
+
+    .input,
+    .textarea {
+      width: 100%;
+      padding: 13px 18px;
+      border: 1px solid rgba(20, 83, 45, 0.18);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.94);
+      outline: none;
+      font-family: inherit;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--ink);
+      transition: border-color .2s ease, box-shadow .2s ease;
+    }
+
+    .input { min-height: 56px; }
+    .textarea { min-height: 260px; resize: vertical; line-height: 1.9; font-size: 15px; direction: rtl; }
+
+    .input:focus,
+    .textarea:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 5px rgba(217, 164, 65, 0.15);
+    }
+
+    .paste-box {
+      display: grid;
+      gap: 12px;
+      padding: 18px;
+      border: 1px dashed rgba(20, 83, 45, 0.24);
+      border-radius: 24px;
+      background: linear-gradient(135deg, rgba(20,83,45,.045), rgba(217,164,65,.075));
+    }
+
+    .paste-actions,
+    .login-actions,
+    .report-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .report-actions { justify-content: center; padding: 0 22px 24px; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 50px;
+      padding: 12px 22px;
+      border: none;
+      border-radius: 18px;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 900;
+      color: #fff;
+      background: linear-gradient(135deg, var(--primary), var(--primary-2));
+      box-shadow: 0 14px 26px rgba(20, 83, 45, 0.18);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 18px 34px rgba(20, 83, 45, 0.22); }
+    .btn.secondary { color: var(--primary); background: #fff; border: 1px solid rgba(20, 83, 45, 0.16); box-shadow: 0 10px 24px rgba(20, 83, 45, 0.08); }
+    .btn.danger { background: linear-gradient(135deg, #7f1d1d, #b42318); }
+
+    .note,
+    .print-note {
+      margin-top: 16px;
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(20, 83, 45, 0.07);
+      color: var(--primary);
+      line-height: 1.8;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .print-note { margin: 0 22px 16px; text-align: center; }
+
+    .status {
+      display: none;
+      margin-top: 16px;
+      padding: 14px 16px;
+      border-radius: 18px;
+      line-height: 1.8;
+      font-weight: 800;
+      font-size: 14px;
+    }
+
+    .status.show { display: block; }
+    .status.success { color: var(--success); background: rgba(2, 122, 72, 0.10); }
+    .status.error { color: var(--danger); background: rgba(180, 35, 24, 0.10); }
+
+    .search-box {
+      display: grid;
+      gap: 14px;
+      max-width: 760px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .result {
+      display: none;
+      max-width: 940px;
+      width: 100%;
+      margin: 24px auto 0;
+      border-radius: 30px;
+      overflow: hidden;
+      border: 1px solid rgba(217, 164, 65, 0.28);
+      background: linear-gradient(135deg, rgba(255,255,255,.97), rgba(255,250,240,.94));
+      box-shadow: 0 22px 58px rgba(20, 83, 45, 0.12);
+    }
+
+    .result.show { display: block; animation: fadeUp .35s ease both; }
+
+    .certificate-top {
+      position: relative;
+      padding: 24px;
+      color: #fff;
+      background:
+        linear-gradient(135deg, rgba(20,83,45,.98), rgba(217,164,65,.92)),
+        url("data:image/svg+xml,%3Csvg width='90' height='90' viewBox='0 0 90 90' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.18'%3E%3Cpath d='M45 5l10 22 24 3-17 17 4 24-21-12-21 12 4-24-17-17 24-3z'/%3E%3Ccircle cx='45' cy='45' r='34'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .certificate-top::after {
+      content: "🏅";
+      position: absolute;
+      left: 24px;
+      top: 22px;
+      width: 70px;
+      height: 70px;
+      display: grid;
+      place-items: center;
+      border-radius: 24px;
+      font-size: 38px;
+      background: rgba(255,255,255,.16);
+      border: 1px solid rgba(255,255,255,.22);
+    }
+
+    .certificate-top h3 { margin: 0; padding-left: 88px; font-size: clamp(24px, 3vw, 34px); font-weight: 900; line-height: 1.5; }
+    .certificate-top p { margin: 7px 0 0; padding-left: 88px; color: rgba(255, 255, 255, .88); font-weight: 700; line-height: 1.8; }
+
+    .student-highlight {
+      margin: 22px;
+      padding: 20px;
+      border-radius: 24px;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(244,213,141,.30), rgba(20,83,45,.07));
+      border: 1px solid rgba(217, 164, 65, 0.26);
+    }
+
+    .student-highlight span { display: block; color: var(--muted); font-size: 14px; font-weight: 900; }
+    .student-highlight strong { display: block; color: var(--primary); font-size: clamp(25px, 4vw, 42px); font-weight: 900; line-height: 1.6; }
+
+    .excellence-quote {
+      max-width: 760px;
+      margin: 10px auto 0;
+      padding: 12px 18px;
+      border-radius: 18px;
+      color: #8a5b0e;
+      background: rgba(255, 255, 255, 0.62);
+      border: 1px solid rgba(217, 164, 65, 0.22);
+      font-size: clamp(15px, 2vw, 18px);
+      font-weight: 900;
+      line-height: 2;
+    }
+
+    .result-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      padding: 0 22px 22px;
+    }
+
+    .field {
+      padding: 16px;
+      border-radius: 19px;
+      background: rgba(20, 83, 45, 0.055);
+      border: 1px solid rgba(20, 83, 45, 0.08);
+    }
+
+    .field.featured { background: rgba(217, 164, 65, 0.13); border-color: rgba(217, 164, 65, 0.22); }
+    .field span { display: block; margin-bottom: 6px; color: var(--muted); font-size: 13px; font-weight: 800; }
+    .field strong { display: block; color: var(--primary); font-size: 18px; line-height: 1.6; word-break: break-word; }
+
+    .empty {
+      display: none;
+      max-width: 760px;
+      margin: 18px auto 0;
+      padding: 18px;
+      border-radius: 20px;
+      color: var(--danger);
+      background: rgba(180, 35, 24, 0.10);
+      border: 1px solid rgba(180, 35, 24, 0.14);
+      font-weight: 900;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    .empty.show { display: block; }
+
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 16px; }
+    .stat { padding: 16px; border-radius: 20px; background: rgba(255,255,255,.78); border: 1px solid rgba(20,83,45,.10); text-align: center; }
+    .stat b { display: block; color: var(--primary); font-size: 25px; font-weight: 900; }
+    .stat span { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; font-weight: 800; }
+
+    .table-wrap {
+      margin-top: 18px;
+      max-height: 360px;
+      overflow: auto;
+      border-radius: 20px;
+      border: 1px solid rgba(20, 83, 45, 0.10);
+      background: #fff;
+    }
+
+    table { width: 100%; border-collapse: collapse; min-width: 780px; font-size: 14px; }
+    th, td { padding: 13px 14px; border-bottom: 1px solid rgba(20, 83, 45, 0.08); text-align: right; white-space: nowrap; }
+    th { position: sticky; top: 0; z-index: 1; color: #fff; background: var(--primary); font-weight: 900; }
+    td { color: #26342b; font-weight: 700; }
+
+    .privacy-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 18px;
+      padding: 18px;
+      border-radius: 22px;
+      color: var(--primary);
+      background: rgba(217, 164, 65, 0.13);
+      border: 1px solid rgba(217, 164, 65, 0.18);
+      line-height: 1.8;
+      font-weight: 700;
+    }
+
+    .privacy-card .mark {
+      flex: 0 0 auto;
+      width: 42px;
+      height: 42px;
+      border-radius: 15px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      background: linear-gradient(135deg, var(--gold), var(--primary));
+      font-size: 22px;
+    }
+
+    .data-management-box { margin-top: 18px; background: rgba(180, 35, 24, 0.07); border-color: rgba(180, 35, 24, 0.16); }
+    .data-management-box h3 { color: var(--danger); }
+
+    .admin-content { display: none; }
+    .admin-content.show { display: block; }
+    .login-area.hide { display: none; }
+
+    footer {
+      margin-top: 22px;
+      padding: 20px 24px;
+      border-radius: 24px;
+      text-align: center;
+      color: var(--primary);
+      background: rgba(255, 255, 255, 0.68);
+      border: 1px solid rgba(20, 83, 45, 0.10);
+      box-shadow: 0 14px 34px rgba(20, 83, 45, 0.08);
+      line-height: 2;
+      font-weight: 800;
+    }
+
+    .admin-load-note { display: none; }
+
+    #adminContent.show .admin-load-note { display: block; }
+
+    footer .designer { color: #8a5b0e; font-weight: 900; }
+
+    @media (max-width: 960px) {
+      .admin-grid { grid-template-columns: 1fr; }
+      .card, .panels-shell { min-height: auto; }
+    }
+
+    @media (max-width: 700px) {
+      .page { width: min(100% - 22px, 1180px); padding-top: 14px; }
+      .hero { padding: 28px 22px; }
+      .tabs, .stats, .result-grid { grid-template-columns: 1fr; }
+      .input-row { flex-direction: column; }
+      .btn { width: 100%; }
+      .card-body, .card-header { padding: 18px; }
+      .certificate-top h3, .certificate-top p { padding-left: 0; }
+      .certificate-top::after { position: static; margin-bottom: 14px; }
+    }
+
+    @media print {
+      @page { size: A4 portrait; margin: 10mm; }
+      * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+      html, body { width: 210mm; min-height: 297mm; margin: 0 !important; padding: 0 !important; background: #fff !important; overflow: hidden !important; }
+      body * { visibility: hidden !important; }
+      #result, #result * { visibility: visible !important; }
+      .page, .panels-shell, #studentPanel, .card, .card-body { display: block !important; width: 100% !important; min-height: auto !important; margin: 0 !important; padding: 0 !important; border: 0 !important; box-shadow: none !important; background: #fff !important; }
+      #result { position: absolute !important; top: 0 !important; right: 0 !important; left: 0 !important; display: block !important; width: 100% !important; max-width: none !important; margin: 0 !important; border: 2px solid #d9a441 !important; border-radius: 18px !important; box-shadow: none !important; overflow: hidden !important; page-break-inside: avoid !important; break-inside: avoid !important; }
+      .certificate-top { padding: 14mm 12mm 10mm !important; }
+      .certificate-top::after { left: 12mm !important; top: 12mm !important; width: 52px !important; height: 52px !important; border-radius: 18px !important; font-size: 30px !important; }
+      .certificate-top h3 { font-size: 25px !important; line-height: 1.45 !important; padding-left: 70px !important; }
+      .certificate-top p { font-size: 13px !important; line-height: 1.7 !important; padding-left: 70px !important; }
+      .student-highlight { margin: 12mm 10mm 7mm !important; padding: 8mm !important; border-radius: 18px !important; }
+      .student-highlight span { font-size: 12px !important; }
+      .student-highlight strong { font-size: 28px !important; line-height: 1.45 !important; }
+      .excellence-quote { margin-top: 6px !important; padding: 8px 12px !important; font-size: 14px !important; line-height: 1.7 !important; }
+      .result-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 8px !important; padding: 0 10mm 8mm !important; }
+      .field { padding: 10px 12px !important; border-radius: 14px !important; }
+      .field span { font-size: 11px !important; margin-bottom: 3px !important; }
+      .field strong { font-size: 15px !important; line-height: 1.45 !important; }
+      .print-note { display: block !important; margin: 0 10mm 8mm !important; padding: 9px 12px !important; font-size: 12px !important; line-height: 1.6 !important; }
+      .tabs, #adminPanel, footer, .search-box, .hero, .card-header, .empty, .note, .report-actions { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="badge"><span></span> نظام إلكتروني لعرض سجل الطلبة الأوائل</div>
+      <h1>الطلبة الأوائل للفصل الدراسي الثاني بمدرسة الخيرات للتعليم الأساسي 5-8 للعام الدراسي 2025 - 2026 -الدور الأول - الفصل الدراسي الثاني</h1>
+      
+    </section>
+
+    <div class="tabs" role="tablist" aria-label="اختيار النافذة">
+      <button class="tab-btn active" data-tab="studentPanel" type="button">نافذة الطالب وولي الأمر</button>
+      <button class="tab-btn" data-tab="adminPanel" type="button">نافذة الإدارة المدرسية</button>
+    </div>
+
+    <section class="panels-shell">
+      <div id="studentPanel" class="panel active">
+        <article class="card report-box">
+          <div class="card-header">
+            <h2>البحث عن سجل الطالب</h2>
+            <p>أدخل الرقم المدني كما هو وارد في سجل الطلبة الأوائل.</p>
+          </div>
+          <div class="card-body">
+            <div class="search-box">
+              <label for="civilSearch">الرقم المدني</label>
+              <div class="input-row">
+                <input id="civilSearch" class="input" type="text" inputmode="numeric" placeholder="مثال: 12345678" autocomplete="off" />
+                <button id="searchBtn" class="btn" type="button">بحث</button>
+              </div>
+            </div>
+
+            <div id="emptyMessage" class="empty">تأكد من الرقم المدني أو أن الطالب ليس من ضمن الطلبة الأوائل</div>
+
+            <div id="result" class="result" aria-live="polite">
+              <div class="certificate-top">
+                <h3>تقرير الطالب ضمن الطلبة الأوائل</h3>
+                <p>الفصل الدراسي الثاني – مدرسة الخيرات للتعليم الأساسي للصفوف 5-8</p>
+              </div>
+
+              <div class="student-highlight">
+                <span>اسم الطالب</span>
+                <strong id="studentNameTitle">—</strong>
+                <p class="excellence-quote">التميز لا يأتي صدفة، بل هو نتيجة عمل مستمر… ومشوار النجاح ما زال مستمرًا.</p>
+              </div>
+
+              <div class="result-grid">
+                <div class="field"><span>الرقم المدني</span><strong id="rCivil">—</strong></div>
+                <div class="field"><span>الصف</span><strong id="rGrade">—</strong></div>
+                <div class="field"><span>الشعبة</span><strong id="rSection">—</strong></div>
+                <div class="field featured"><span>المجموع</span><strong id="rTotal">—</strong></div>
+                <div class="field featured"><span>الترتيب على الشعبة</span><strong id="rSectionRank">—</strong></div>
+                <div class="field featured"><span>الترتيب على الصف</span><strong id="rGradeRank">—</strong></div>
+              </div>
+
+              <div class="print-note">نسخة مخصصة للطباعة في ورقة واحدة للطالب وولي الأمر</div>
+              <div class="report-actions">
+                <button class="btn secondary" type="button" onclick="window.print()">طباعة التقرير</button>
+              </div>
+            </div>
+
+            <div id="loadStatus" class="note admin-load-note">جاري تحميل البيانات من ملف data.json...</div>
+          </div>
+        </article>
+      </div>
+
+      <div id="adminPanel" class="panel">
+        <article class="card">
+          <div class="card-header">
+            <h2>قسم الإدارة المدرسية</h2>
+            <p>يرجى تسجيل الدخول أولًا لإضافة بيانات جديدة أو تنزيل نسخة JSON.</p>
+          </div>
+          <div class="card-body">
+            <div id="loginArea" class="login-area login-box">
+              <h3>تسجيل دخول الإدارة المدرسية</h3>
+              <p>هذا القسم مخصص للإدارة المدرسية فقط.</p>
+              <div class="field-stack">
+                <label for="adminUser">اسم المستخدم</label>
+                <input id="adminUser" class="input" type="text" placeholder="أدخل اسم المستخدم" autocomplete="username" />
+              </div>
+              <div class="field-stack">
+                <label for="adminPass">كلمة المرور</label>
+                <input id="adminPass" class="input" type="password" placeholder="أدخل كلمة المرور" autocomplete="current-password" />
+              </div>
+              <div class="login-actions">
+                <button id="loginBtn" class="btn" type="button">دخول</button>
+              </div>
+              <div id="loginStatus" class="status"></div>
+            </div>
+
+            <div id="adminContent" class="admin-content">
+              <div class="privacy-card">
+                <div class="mark">🔒</div>
+                <div>
+                  <strong>تم الدخول إلى قسم الإدارة المدرسية.</strong>
+                  عند لصق بيانات جديدة اضغط حفظ، ثم اضغط تنزيل data.json وارفع الملف الناتج إلى GitHub بجانب index.html.
+                </div>
+              </div>
+
+              <div id="adminDataStatus" class="note">جاري التحقق من ملف data.json...</div>
+
+              <div class="admin-grid">
+                <div class="upload-box">
+                  <h3>إضافة أو استبدال سجل الطلبة الأوائل</h3>
+                  <p>انسخ البيانات من Excel ثم الصقها بنفس الترتيب: الرقم المدني، اسم الطالب، الصف، الشعبة، المجموع، الترتيب على الشعبة، الترتيب على الصف.</p>
+
+                  <div class="paste-box">
+                    <label for="pasteData">لصق البيانات من Excel</label>
+                    <textarea id="pasteData" class="textarea" rows="11" placeholder="الرقم المدني&#9;اسم الطالب&#9;الصف&#9;الشعبة&#9;المجموع&#9;الترتيب على الشعبة&#9;الترتيب على الصف&#10;12345678&#9;أحمد محمد سالم&#9;السابع&#9;1&#9;98&#9;1&#9;1"></textarea>
+                    <div class="paste-actions">
+                      <button id="savePasteBtn" class="btn" type="button">حفظ البيانات الملصقة</button>
+                      <button id="downloadJsonBtn" class="btn secondary" type="button">تنزيل data.json</button>
+                      <button id="clearPasteBtn" class="btn secondary" type="button">مسح مربع اللصق</button>
+                    </div>
+                  </div>
+
+                  <div id="uploadStatus" class="status"></div>
+
+                  <div class="stats">
+                    <div class="stat"><b id="totalRecords">0</b><span>عدد السجلات</span></div>
+                    <div class="stat"><b id="uniqueClasses">0</b><span>عدد الصفوف</span></div>
+                    <div class="stat"><b id="lastUpload">—</b><span>مصدر البيانات</span></div>
+                  </div>
+
+                  <div class="data-management-box">
+                    <h3>إدارة البيانات</h3>
+                    <p>يمكن حذف البيانات الحالية من المتصفح فقط. لحذفها من الموقع المنشور يجب رفع ملف data.json جديد أو فارغ على GitHub.</p>
+                    <button id="clearDataBtn" class="btn danger" type="button">حذف البيانات الحالية من المتصفح</button>
+                  </div>
+
+                  <div class="login-actions" style="margin-top:18px;">
+                    <button id="logoutBtn" class="btn danger" type="button">تسجيل خروج</button>
+                  </div>
+                </div>
+
+                <div class="upload-box">
+                  <h3>معاينة السجلات الحالية</h3>
+                  <p>تظهر هنا معاينة مرتبة لأول السجلات التي تم تحميلها من data.json أو حفظها من اللصق.</p>
+                  <div class="table-wrap" id="tableWrap" style="display:none;">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>الرقم المدني</th>
+                          <th>اسم الطالب</th>
+                          <th>الصف</th>
+                          <th>الشعبة</th>
+                          <th>المجموع</th>
+                          <th>الترتيب على الشعبة</th>
+                          <th>الترتيب على الصف</th>
+                        </tr>
+                      </thead>
+                      <tbody id="previewBody"></tbody>
+                    </table>
+                  </div>
+                  <div id="noPreview" class="note">لا توجد بيانات محفوظة حاليًا.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      جميع الحقوق محفوظة 2025-2026– مدرسة الخيرات للتعليم الأساسي للصفوف (5-)8
+      <br />
+      <span class="designer">تصميم: سالم بن حمود بن سالم الحبسي – أخصائي أنظمة مدرسية</span>
+    </footer>
+  </main>
+
+  <script>
+    const STORAGE_KEY = "khairat_top_students_records_json_v1";
+    const ADMIN_USER = "salim50437";
+    const ADMIN_PASS = "S@lim50437";
+    let students = [];
+
+    const tabs = document.querySelectorAll(".tab-btn");
+    const panels = document.querySelectorAll(".panel");
+    const pasteData = document.getElementById("pasteData");
+    const savePasteBtn = document.getElementById("savePasteBtn");
+    const downloadJsonBtn = document.getElementById("downloadJsonBtn");
+    const clearPasteBtn = document.getElementById("clearPasteBtn");
+    const uploadStatus = document.getElementById("uploadStatus");
+    const previewBody = document.getElementById("previewBody");
+    const tableWrap = document.getElementById("tableWrap");
+    const noPreview = document.getElementById("noPreview");
+    const totalRecords = document.getElementById("totalRecords");
+    const uniqueClasses = document.getElementById("uniqueClasses");
+    const lastUpload = document.getElementById("lastUpload");
+    const searchInput = document.getElementById("civilSearch");
+    const searchBtn = document.getElementById("searchBtn");
+    const result = document.getElementById("result");
+    const emptyMessage = document.getElementById("emptyMessage");
+    const loadStatus = document.getElementById("loadStatus");
+    const adminDataStatus = document.getElementById("adminDataStatus");
+    const adminUser = document.getElementById("adminUser");
+    const adminPass = document.getElementById("adminPass");
+    const loginBtn = document.getElementById("loginBtn");
+    const logoutBtn = document.getElementById("logoutBtn");
+    const clearDataBtn = document.getElementById("clearDataBtn");
+    const loginStatus = document.getElementById("loginStatus");
+    const loginArea = document.getElementById("loginArea");
+    const adminContent = document.getElementById("adminContent");
+
+    tabs.forEach(button => {
+      button.addEventListener("click", () => {
+        tabs.forEach(btn => btn.classList.remove("active"));
+        panels.forEach(panel => panel.classList.remove("active"));
+        button.classList.add("active");
+        document.getElementById(button.dataset.tab).classList.add("active");
+      });
+    });
+
+    function normalizeKey(value) {
+      return String(value || "").trim().replace(/\s+/g, " ").toLowerCase();
+    }
+
+    function cleanCivil(value) {
+      return String(value || "").trim().replace(/\s+/g, "");
+    }
+
+    function normalizeRecord(record) {
+      return {
+        civil: cleanCivil(record.civil ?? record["الرقم المدني"] ?? ""),
+        name: String(record.name ?? record["اسم الطالب"] ?? "").trim(),
+        grade: String(record.grade ?? record["الصف"] ?? "").trim(),
+        section: String(record.section ?? record["الشعبة"] ?? "").trim(),
+        total: String(record.total ?? record["المجموع"] ?? "").trim(),
+        sectionRank: String(record.sectionRank ?? record["الترتيب على الشعبة"] ?? "").trim(),
+        gradeRank: String(record.gradeRank ?? record["الترتيب على الصف"] ?? "").trim()
+      };
+    }
+
+    function splitPasteLine(line) {
+      if (line.includes("\t")) return line.split("\t");
+      if (line.includes(",")) return line.split(",");
+      if (line.includes("؛")) return line.split("؛");
+      if (line.includes(";")) return line.split(";");
+      return line.split(/\s{2,}/);
+    }
+
+    function isHeaderRow(cells) {
+      const joined = cells.map(normalizeKey).join(" ");
+      return joined.includes("الرقم المدني") && joined.includes("اسم الطالب");
+    }
+
+    function parsePastedData(text) {
+      const lines = String(text || "").split(/\r?\n/).map(line => line.trim()).filter(Boolean);
+      if (!lines.length) throw new Error("يرجى لصق بيانات الطلبة أولًا.");
+
+      let rows = lines.map(splitPasteLine).map(cells => cells.map(cell => String(cell || "").trim()));
+      if (rows.length && isHeaderRow(rows[0])) rows = rows.slice(1);
+
+      const invalidRows = [];
+      const mapped = rows.map((cells, index) => {
+        if (cells.length < 7) invalidRows.push(index + 1);
+        return {
+          civil: cleanCivil(cells[0]),
+          name: String(cells[1] || "").trim(),
+          grade: String(cells[2] || "").trim(),
+          section: String(cells[3] || "").trim(),
+          total: String(cells[4] || "").trim(),
+          sectionRank: String(cells[5] || "").trim(),
+          gradeRank: String(cells[6] || "").trim()
+        };
+      }).filter(item => item.civil && item.name);
+
+      if (invalidRows.length) {
+        throw new Error("بعض الصفوف لا تحتوي على جميع الأعمدة السبعة المطلوبة. راجع الصفوف: " + invalidRows.join("، "));
+      }
+
+      if (!mapped.length) throw new Error("لم يتم العثور على سجلات صالحة. تأكد من ترتيب البيانات قبل اللصق.");
+      return mapped;
+    }
+
+    function saveLocalData(sourceLabel = "بيانات محفوظة في المتصفح") {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({ records: students, source: sourceLabel }));
+    }
+
+    async function loadData() {
+      try {
+        const response = await fetch("data.json?cache=" + Date.now(), { cache: "no-store" });
+        if (!response.ok) throw new Error("تعذر تحميل data.json");
+        const rawData = await response.json();
+        students = Array.isArray(rawData) ? rawData.map(normalizeRecord).filter(item => item.civil && item.name) : [];
+        renderPreview();
+        updateStats("data.json");
+        const msg = students.length
+          ? `تم تحميل ${students.length} سجلًا من ملف data.json.`
+          : "تم تحميل ملف data.json لكنه لا يحتوي على سجلات.";
+        loadStatus.textContent = msg;
+        adminDataStatus.textContent = msg;
+        return;
+      } catch (error) {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+          try {
+            const parsed = JSON.parse(saved);
+            students = Array.isArray(parsed.records) ? parsed.records.map(normalizeRecord).filter(item => item.civil && item.name) : [];
+            renderPreview();
+            updateStats(parsed.source || "بيانات محفوظة في المتصفح");
+            loadStatus.textContent = "تعذر تحميل data.json، وتم استخدام البيانات المحفوظة في هذا المتصفح.";
+            adminDataStatus.textContent = "تعذر تحميل data.json، وتم استخدام البيانات المحفوظة في هذا المتصفح.";
+            return;
+          } catch (innerError) {
+            console.warn("تعذر قراءة البيانات المحفوظة", innerError);
+          }
+        }
+        students = [];
+        renderPreview();
+        updateStats("لا توجد بيانات");
+        loadStatus.textContent = "";
+        adminDataStatus.textContent = "لم يتم العثور على data.json. ارفع ملف data.json بجانب index.html على GitHub Pages.";
+      }
+    }
+
+    function updateStats(source = "—") {
+      totalRecords.textContent = students.length;
+      uniqueClasses.textContent = new Set(students.map(s => s.grade).filter(Boolean)).size;
+      lastUpload.textContent = students.length ? source : "—";
+    }
+
+    function renderPreview() {
+      previewBody.innerHTML = "";
+      students.slice(0, 80).forEach(student => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${escapeHTML(student.civil)}</td>
+          <td>${escapeHTML(student.name)}</td>
+          <td>${escapeHTML(student.grade)}</td>
+          <td>${escapeHTML(student.section)}</td>
+          <td>${escapeHTML(student.total)}</td>
+          <td>${escapeHTML(student.sectionRank)}</td>
+          <td>${escapeHTML(student.gradeRank)}</td>
+        `;
+        previewBody.appendChild(row);
+      });
+      tableWrap.style.display = students.length ? "block" : "none";
+      noPreview.style.display = students.length ? "none" : "block";
+    }
+
+    function escapeHTML(value) {
+      return String(value || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/\"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    function setStatus(element, message, type) {
+      element.textContent = message;
+      element.className = `status show ${type}`;
+    }
+
+    function savePastedData() {
+      try {
+        students = parsePastedData(pasteData.value);
+        saveLocalData("بيانات ملصقة في المتصفح");
+        renderPreview();
+        updateStats("بيانات ملصقة");
+        loadStatus.textContent = "";
+        adminDataStatus.textContent = `تم حفظ ${students.length} سجلًا في المتصفح. لتنشيطها على GitHub Pages قم بتنزيل data.json ورفعه إلى المستودع.`;
+        setStatus(uploadStatus, `تم حفظ البيانات بنجاح، وعدد السجلات المحفوظة: ${students.length}. اضغط الآن تنزيل data.json.`, "success");
+      } catch (error) {
+        setStatus(uploadStatus, error.message || "حدث خطأ أثناء قراءة البيانات الملصقة.", "error");
+      }
+    }
+
+    function downloadDataJson() {
+      const jsonText = JSON.stringify(students, null, 2);
+      const blob = new Blob([jsonText], { type: "application/json;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "data.json";
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+      setStatus(uploadStatus, "تم تنزيل ملف data.json. ارفعه إلى GitHub بجانب index.html.", "success");
+    }
+
+    function clearPasteBox() {
+      pasteData.value = "";
+      pasteData.focus();
+    }
+
+    function showResult(student) {
+      document.getElementById("studentNameTitle").textContent = student.name;
+      document.getElementById("rCivil").textContent = student.civil || "—";
+      document.getElementById("rGrade").textContent = student.grade || "—";
+      document.getElementById("rSection").textContent = student.section || "—";
+      document.getElementById("rTotal").textContent = student.total || "—";
+      document.getElementById("rSectionRank").textContent = student.sectionRank || "—";
+      document.getElementById("rGradeRank").textContent = student.gradeRank || "—";
+      result.classList.add("show");
+      emptyMessage.classList.remove("show");
+    }
+
+    function hideResultWithMessage(message) {
+      result.classList.remove("show");
+      emptyMessage.textContent = message;
+      emptyMessage.classList.add("show");
+    }
+
+    function searchStudent() {
+      const civil = cleanCivil(searchInput.value);
+      if (!civil) {
+        hideResultWithMessage("يرجى إدخال الرقم المدني أولًا.");
+        return;
+      }
+
+      const student = students.find(item => cleanCivil(item.civil) === civil);
+      if (student) showResult(student);
+      else hideResultWithMessage("تأكد من الرقم المدني أو أن الطالب ليس من ضمن الطلبة الأوائل");
+    }
+
+    function loginAdmin() {
+      if (adminUser.value.trim() === ADMIN_USER && adminPass.value === ADMIN_PASS) {
+        loginArea.classList.add("hide");
+        adminContent.classList.add("show");
+        setStatus(loginStatus, "تم تسجيل الدخول بنجاح.", "success");
+      } else {
+        setStatus(loginStatus, "اسم المستخدم أو كلمة المرور غير صحيحة.", "error");
+      }
+    }
+
+    function logoutAdmin() {
+      adminUser.value = "";
+      adminPass.value = "";
+      adminContent.classList.remove("show");
+      loginArea.classList.remove("hide");
+      loginStatus.className = "status";
+    }
+
+    function clearAllData() {
+      const confirmed = confirm("هل أنت متأكد من حذف البيانات الحالية من هذا المتصفح؟ لا يحذف هذا الإجراء ملف data.json المنشور على GitHub.");
+      if (!confirmed) return;
+
+      students = [];
+      localStorage.removeItem(STORAGE_KEY);
+      renderPreview();
+      updateStats("—");
+      result.classList.remove("show");
+      emptyMessage.classList.remove("show");
+      searchInput.value = "";
+      pasteData.value = "";
+      loadStatus.textContent = "";
+      adminDataStatus.textContent = "تم حذف البيانات من المتصفح. قد تظهر بيانات data.json مرة أخرى عند تحديث الصفحة إذا كان الملف موجودًا على GitHub.";
+      setStatus(uploadStatus, "تم حذف بيانات المتصفح. لحذف بيانات الموقع المنشور ارفع ملف data.json فارغًا أو جديدًا.", "success");
+    }
+
+    savePasteBtn.addEventListener("click", savePastedData);
+    downloadJsonBtn.addEventListener("click", downloadDataJson);
+    clearPasteBtn.addEventListener("click", clearPasteBox);
+    loginBtn.addEventListener("click", loginAdmin);
+    logoutBtn.addEventListener("click", logoutAdmin);
+    clearDataBtn.addEventListener("click", clearAllData);
+    searchBtn.addEventListener("click", searchStudent);
+    searchInput.addEventListener("keydown", event => { if (event.key === "Enter") searchStudent(); });
+    adminPass.addEventListener("keydown", event => { if (event.key === "Enter") loginAdmin(); });
+
+    loadData();
+  </script>
+</body>
+</html>
